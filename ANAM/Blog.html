@@ -1,0 +1,1195 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+   
+    <!--=========Heder Area========-->
+    <header class="main_header_area menu_color">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 hidden-xs hidden-sm hidden-md">
+                        <div class="top-left">
+                            <ul class="list-unstyled">
+                                <li><a href="mailto:ceo@anamtutors.com"><i class="fa-regular fa-envelope"></i><span
+                                            class="text">ceo@anamtutors.com</span></a></li>
+                                <li><i class="fa-solid fa-phone"></i><span class="text">+91 7827761808</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="header_social">
+                            <li><a href="https://www.facebook.com/Anamtutorsource/" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/anam_tutors" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+
+                            <li><a href="https://www.linkedin.com/company/14541200/admin/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="login-list">
+                            <ul id="ul_NotLoggedIn">
+                                <li class="txt">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#LoginModal"><i
+                                            class="fa-solid fa-right-to-bracket" aria-hidden="true"></i>Login</a>
+                                </li>
+                                <li>
+
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle register " type="button" id="dropdownMenu1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa-solid fa-user-plus" aria-hidden="true"></i> Register
+                                        </button>
+                                        <ul class="dropdown-menu bg-white" aria-labelledby="dropdownMenu1">
+                                            <li><a class="dropdown-item" href="/tutor-registration.html">As a Tutor</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="/register_institute.html">As an
+                                                    Institute</a></li>
+                                        </ul>
+                                    </div></li></ul>                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header menu">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html"><img src="images/anam tutors logo.png"
+                            alt="Anam Tutors Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="/index.html" role="button" aria-haspopup="true"
+                                    aria-expanded="false">HOME</a>
+                            </li>
+                            <li class="nav-item submenu">
+                                <a class="nav-link submenu-toggle" href="#" role="button" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    ABOUT US<i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="submenu-menu">
+                                    <li><a class="submenu-item" href="/about-us.html">About Anam Tutors</a></li>
+                                    <li><a class="submenu-item" href="/how-select-tutor.html">How We Select Tutors</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./find-home-tutor.html">FIND A HOME TUTOR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./find-online-tutor.html">FIND A ONLINE TUTOR</a>
+                            </li>
+                            <li class="nav-item submenu">
+                                <a class="nav-link submenu-toggle" href="#" role="button" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    SERVICES<i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="submenu-menu">
+                                    <li><a class="submenu-item" href="./Home Tutors.html">Home Tutors</a></li>
+                                    <li><a class="submenu-item" href="./Coaching-classes.html">Coaching Classes</a></li>
+                                    <li><a class="submenu-item" href="./online-tutors.html">Online Tutor</a></li>
+                                    <li><a class="submenu-item" href="./special-need-tutor.html">Special Need Tutor</a>
+                                    </li>
+                                    <li><a class="submenu-item" href="./career-counselling.html">Career Counselling</a>
+                                    </li>
+                                    <li><a class="submenu-item" href="./entrance exam.html">Entrance Exams</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Contact-us.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+<!--==========Header Area ===========-->
+
+<!--==========Inner Slider========-->
+    <section id="inner-slider">
+        <img src="images/inner-slide.jpg">
+        <div class="page-title-wrapper">
+            <h3 class="caption">Blog</h3>
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                        <li class="breadcrumb-item">/</li>
+                        <li class="breadcrumb-item active" aria-current="page"><a href="/Blog.html">Blogs</a></li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <!--=========Inner Slider=========-->
+    <!--================Inner Text Area =================-->
+     <div id="content" class="mt50">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12"> 
+                    <h2 class="mb30">Blogs</h2>
+                    <div class="row">
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/Blog1.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta">
+                                            <b>Apr 28,2022</b>" | "<b>By:test</b>
+                                        </div>
+                                        <h3 style="min-height: 67px;"><a href="#">Hi</a></h3>
+                                        <p>Testing</p>
+                                        
+                                         <a  href="/Blog-content.html#1" data-section="1">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a> 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/637296559956486283.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta">
+                                            <b>July 06,2020</b>" | "<b>By: AnamTutors</b>
+                                        </div>
+                                        <h3 style="min-height: 67px;"><a href="#">5 Simple(But Powerful) Tips that can
+                                                Help You Study More In Less Time</a></h3>
+                                        <p>"Exam time is always stressful. Reading piles of books and memorizing
+                                            everything ..."</p>
+                                        <a href="Blog-content.html#2" data-section="2">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/637295989675853763.png" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Jul 06,2020</b>" | "<b>By: AnamTutors</b></div>
+                                        <h3 style="min-height:67px;"><a href="#">Top 5 Qualities of a Good Tutor</a>
+                                        </h3>
+                                        <p>"A tutor not just helps the student to study his syllabus but also offers
+                                            moral s..."</p>
+                                        <a href="/Blog-content.html#3" data-section="3">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/636994984152601242.png" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Jul 23,2019</b>" | "<b>By: Anam@Tutors</b></div>
+                                        <h3 style="min-height: 67px;"><a href="#">How To Become a Successful Tutor</a>
+                                        </h3>
+                                        <p>"How to Be A Good Tutor Entering the world of private tuition for the first
+                                            time..."</p>
+                                        <a href="/Blog-content.html#4" data-section="4">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/636984836046107312.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Jul 11,2019</b>" | "<b>By: Anam@Tutors</b></div>
+                                        <h3 style="min-height: 67px;"><a href="#">Moons that escape their planets could
+                                                become 'Ploonets'</a></h3>
+                                        <p>"Meet ploonets: planets of moonish origin. In other star systems, some moons
+                                            cou..."</p>
+                                        <a href="/Blog-content.html#5" data-section="5">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/636984539097288851.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Jul 11,2019</b>" | "<b>By: Anam@Tutors</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">CBSE Class 12 Science:Subject-wise
+                                                preparation tips for PCM</a></h3>
+                                        <p>"Here are 7 preparation tips for your Class 12 board exam that can help: 1.
+                                            Un..."</p>
+                                        <a href="/Blog-content.html#6" data-section="6">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/636977700810768344.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Jul 03,2019</b>" | "<b>By: Anam@Tutors</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Why Private Home Tuition is Important
+                                                for Students</a></h3>
+                                        <p>Parents want to provide their child with the best possible education. They
+                                            want ...</p>
+                                        <a href="/Blog-content.html#7" data-section="7">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/636977703230773437.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>May 24,2017</b>" | "<b>By: NehaRai</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">What are the qualities of best Schools
+                                                in Greater noida west?</a></h3>
+                                        <p>"Noida extension is considered as one of the top locations in NCR as many
+                                            corpora..."</p>
+                                        <a href="/Blog-content.html#8" data-section="8">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/636995018272615671.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Jun 27,2016</b>" | "<b>By: Karan</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">10 Ways to Surprise Your Child</a></h3>
+                                        <p>Your kid performs various kinds of activities, it is important to relax once
+                                            in ...</p>
+                                        <a href="/Blog-content.html#9" data-section="9">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/school.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Sep 04,2015</b>" | "<b>By: Spaceonrent</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">TIPS FOR YOUR OFFICE DESIGN</a></h3>
+                                        <p>Today we share something different away from real estate, but i sure that
+                                            must b...</p>
+                                        <a href="/Blog-content.html#10" data-section="10">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/realestate.jpeg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Sep 04,2015</b>" | "<b>By: Anam@Tutors</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Why Private Home Tuition is Important
+                                                for Students</a></h3>
+                                        <p>"To make you home buying experience good we share several point with you.
+                                            Buil..."</p>
+                                        <a href="/Blog-content.html#11" data-section="11">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/futureeducation.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Apr 29,2015</b>" | "<b>By: Aakash International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Futuristic Visions :- Future of
+                                                Education</a></h3>
+                                        <p>Who can predict the future of education? Will the peak of digitalization
+                                            abolish...</p>
+                                        <a href="/Blog-content.html#12" data-section="12">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/schoolsports.jpeg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 26,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Significance of School Sports</a></h3>
+                                        <p>Sports are an obligatory part of education system at each level of studies.
+                                            Wher...</p>
+                                        <a href="/Blog-content.html#13" data-section="13">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/636995014134794516.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 23,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Importance of Primary Education</a>
+                                        </h3>
+                                        <p>The future of the Society depends on the standard of primary education.
+                                            Primary ...</p>
+                                        <a href="/Blog-content.html#14" data-section="14">
+                                            <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/how-to-choose-right-school-for-child.jpg" class="img-fluid"
+                                            alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 17,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Tips to finding the Right School for
+                                                Child</a></h3>
+                                        <p>"Choosing the right school is one of the most critical decisions in your
+                                            child's ..."</p>
+                                        <a href="/Blog-content.html#15" data-section="15">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/interview tips.jpeg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 14,2015</b>" | "<b>By: Sarvottam Institute of
+                                                Technology and Management</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Interview Tips For Fresher On
+                                                Campus</a></h3>
+                                        <p>"Interview Tips For Freshers: For the jobseekersbasically freshers, to face
+                                            th..."</p>
+                                        <a href="/Blog-content.html#16" data-section="16">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/creativity.png" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 14,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Playschool Education and Creativity in
+                                                India.</a></h3>
+                                        <p>Education could be an important part of child's life. Playschool is that the
+                                            ini...</p>
+                                        <a href="/Blog-content.html#17" data-section="17">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/Strategies-Involving-Students-Interest-In-Learning.jpg"
+                                            class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 14,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Playschool Education: Create Interest
+                                                in Learning</a></h3>
+                                        <p>Play-School education is that the provision of learning to youngsters before
+                                            the...</p>
+                                        <a href="/Blog-content.html#18" data-section="18">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/institute.jpg" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 14,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Playschool Education</a></h3>
+                                        <p>"Preschool academic is associate in nursing no mandatory, that’s why some
+                                            folks a..."</p>
+                                        <a href="/Blog-content.html#19" data-section="19">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/636995011351222899.png" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 14,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Roll of Play School in Making Kids
+                                                Future</a></h3>
+                                        <p>"Play faculty offers day care facility for teenagers of each operating and
+                                            non op..."</p>
+                                        <a href="/Blog-content.html#20" data-section="20">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/activities.webp" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 14,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Play School Activities for Kids</a>
+                                        </h3>
+                                        <p>On early age kids additional inventive, creative and puckish so that they
+                                            contin...</p>
+                                        <a href="/Blog-content.html#21" data-section="21">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/sarvottam.png" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 14,2015</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Admission in Nursery for Session
+                                                2015-16 in Sarvottam International School</a></h3>
+                                        <p>"The children entering the nursery school are totally new to the school
+                                            environme..."</p>
+                                        <a href="/Blog-content.html#22" data-section="22">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <div class="card-item">
+                                    <div class="card-img-top">
+                                        <img src="images/AcademicS.png" class="img-fluid" alt="Blog-image">
+                                        <div class="card-img-top-content">
+                                            <div class="display-table">
+                                                <div class="display-table-cell">
+                                                    <a class="card-link" href="#" title="Card Title">
+                                                        <i class="fa-solid fa-link"></i>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-meta"><b>Mar 14,20195</b>" | "<b>By: Sarvottam International
+                                                School</b></div>
+                                        <h3 style="min-width: 67px;"><a href="#">Academics</a></h3>
+                                        <p>"In the year 2003, we ventured into the field of education with the
+                                            establishment..."</p>
+                                        <a href="/Blog-content.html#23" data-section="23">
+                                        <button class="prpl-btn float-end" id="readmore">Read More</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+</div>
+</div>
+</div>
+</div> 
+    <!--=========Inner Text Area================-->
+
+    <!--=======Testimonial Area===========-->
+    <div class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Our Testimonials</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="tutor-testimonial">
+                                <h3>Tutor’s Testimonials</h3>
+                                <i class="fa fa-quote-left"></i>
+                                <div class="carousel slide" id="fade-quote-carousel" data-bs-ride="carousel"
+                                    data-bs-interval="5000">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="tutor-testimonial">
+                                <h3>Student’s/Parent’s Testimonials</h3>
+                                <i class="fa fa-quote-left"></i>
+                                <div class="carousel slide" id="Div1" data-bs-ride="carousel" data-bs-interval="5000">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================Testimonial Area =================-->
+
+    <div class="client-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mt50">Our Clients</h2>
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/school.jpg"></div>
+                                <h6>SCHOOL</h6>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/institute.jpg">
+                                </div>
+                            </div>
+                            <h6>INSTITUTE</h6>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/college.jpg">
+                                </div>
+                            </div>
+                            <h6>COLLEGE</h6>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/corporate.jpg">
+                                </div>
+                            </div>
+                            <h6>CORPORATE</h6>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/public-sector.jpg">
+                                </div>
+                            </div>
+                            <h6>PUBLIC SECTOR</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ===============Country Area============= -->
+    <div class="country-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-md-8 col-lg-6">
+                    <h2 class="mb30">Countries We Provide Online Tuitions</h2>
+                    <p>Parents and students around the world who want extra help on a certain subject, but don’t want to
+                        leave the comfort of their own home, can to meet with teachers and tutors online via Anam
+                        Tutors.</p>
+                    <p>Online tutors are an affordable way to for families to give their children the very best
+                        education possible, no matter where in the world they are. We Provide Online Tuition to these
+                        countries....</p>
+                    <div class="country-flag">
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="images/australia-flag.jpg" alt="Australia" /><br>
+                                <span>Australia</span>
+                            </li>
+                            <li>
+                                <img src="images/singapore-flag.jpg" alt="Singapore" /><br>
+                                <span>Singapore</span>
+                            </li>
+                            <li>
+                                <img src="images/uk-flag.jpg" alt="UK" /><br>
+                                <span>UK</span>
+                            </li>
+                            <li>
+                                <img src="images/uae-flag.jpg" alt="UAE" /><br>
+                                <span>UAE</span>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="images/thailand-flag.jpg" alt="Thailand" /><br>
+                                <span>Thailand</span>
+                            </li>
+                            <li>
+                                <img src="images/malaysia-flag.jpg" alt="Malaysia" /><br>
+                                <span>Malaysia</span>
+                            </li>
+                            <li>
+                                <img src="images/saudi-arabia-flag.jpg" alt="Saudi Arabia" /><br>
+                                <span>Saudi Arabia</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 col-lg-6 hidden-xs">
+                    <img src="images/girl.png" alt="Anam Tutors" class="country-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+   <!-- ===============Country Area============= -->
+
+    <!-- ==================footer=========== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="about">
+                            <img src="images/anam tutors logo.png" width="180" height="48" alt="Anam Tutors Logo">
+                            <p>Anam Tutors has been established for over 6 years and it has gained a high-class
+                                reputation with over 2,000 clients being successfully matched with tutors each year.
+                                Our objective is to run an efficient service in order to provide individual...</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Quick Links</h4>
+                        <ul style="list-style-type: square; color:#1a265c;">
+                            <li><a href="/about-us.html">About Anam Tutors</a></li>
+                            <li><a href="/how-select-tutor.html">How We Select Tutors</a></li>
+                            <li><a href="/find-home-tutor.html">Find A Home Tutor</a></li>
+                            <li><a href="/find-online-tutor.html">Find An Online Tutor</a></li>
+                            <li><a href="/Blog.html">Blog</a></li>
+                            <li><a href="/Contact-us.html">Contact Us</a></li>
+                            <li><a href="/study-material">Study Material</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Our Services</h4>
+                        <ul style="list-style-type: square; color:#1a265c;">
+                            <li><a href="/Home Tutors.html">Home Tutors</a></li>
+                            <li><a href="/Coaching-classes.html">Coaching Classes</a></li>
+                            <li><a href="/online-tutors.html">Online Tutor</a></li>
+                            <li><a href="/special-need-tutor.html">Special Need Tutor</a></li>
+                            <li><a href="/career-counselling.html">Career Counselling</a></li>
+                            <li><a href="/entrance exam.html">Entrance Exams</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Contact Us</h4>
+                        <ul class="list-unstyled contact">
+                            <li><i class="fa-solid fa-location-dot" style="color:#1a265c" aria-hidden="true"></i> G-14,
+                                First Floor,<br>Sector-3, Noida-201301<br>(Uttar Pradesh)</li>
+                            <li><i class="fa-solid fa-phone" style="color:#1a265c" aria-hidden="true"></i> +91
+                                7827761808</li>
+                            <li><i class="fa-solid fa-envelope" style="color:#1a265c" aria-hidden="true"></i><a
+                                    href="mailto:ceo@anamtutor.com"> ceo@anamtutors.com</a></li>
+                            <li><i class="fa-solid fa-globe" style="color:#1a265c" aria-hidden="true"></i><a href="#">
+                                    www.anamtutors.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-btm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="left">Copyright © 2024 Anam Tutors. <a href="#">Terms and Conditions</a> | <a
+                            href="#">Privacy</a></p>
+                </div>
+                <div class="col-md-6">
+                    <p class="right">Site Designed by <a href="http://infotiqq.com/">INFOTIQQ</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <a class="fixed-button hidden-xs" href="http://www.anamtutors.com/contact-us"></a>
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="modal-title">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="bg-clr">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="validationCustom01" class="form-label">*Email</label>
+                                    <input type="text" class="form-input" id="validationCustom01" required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="validationCustom02" class="form-label">*Password</label>
+                                    <input type="text" class="form-input" id="validationCustom02" required>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sml-txt">
+                            <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                data-bs-target="#ForgotModal">Forgot Password?</a>
+                        </p>
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn ylw-btn2">Submit</button>
+                            <span id="lbl_msg"></span>&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       <script src="script.js"></script>
+       
+    </body>
+</html>
+
+</html>

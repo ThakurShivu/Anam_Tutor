@@ -1,0 +1,673 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="en">
+
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+
+   
+    <header class="main_header_area menu_color">
+        <div class="header_top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 hidden-xs hidden-sm hidden-md">
+                        <div class="top-left">
+                            <ul class="list-unstyled">
+                                <li><a href="mailto:ceo@anamtutors.com"><i class="fa-regular fa-envelope"></i><span
+                                            class="text">ceo@anamtutors.com</span></a></li>
+                                <li><i class="fa-solid fa-phone"></i><span class="text">+91 7827761808</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12">
+                        <ul class="header_social">
+                            <li><a href="https://www.facebook.com/Anamtutorsource/" target="_blank"><i
+                                        class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/anam_tutors" target="_blank"><i
+                                        class="fa-brands fa-twitter"></i></a></li>
+
+                            <li><a href="https://www.linkedin.com/company/14541200/admin/" target="_blank"><i
+                                        class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                        <div class="login-list">
+                            <ul id="ul_NotLoggedIn">
+                                <li class="txt">
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#LoginModal"><i
+                                            class="fa-solid fa-right-to-bracket" aria-hidden="true"></i>Login</a>
+                                </li>
+                                <li>
+
+                                    <div class="dropdown">
+                                        <button class="dropdown-toggle register " type="button" id="dropdownMenu1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                            <i class="fa-solid fa-user-plus" aria-hidden="true"></i> Register
+                                        </button>
+                                        <ul class="dropdown-menu bg-white" aria-labelledby="dropdownMenu1">
+                                            <li><a class="dropdown-item" href="/tutor-registration.html">As a Tutor</a>
+                                            </li>
+                                            <li><a class="dropdown-item" href="/register_institute.html">As an
+                                                    Institute</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="header menu">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand" href="/index.html"><img src="images/anam tutors logo.png"
+                            alt="Anam Tutors Logo"></a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="./index.html" role="button" aria-haspopup="true"
+                                    aria-expanded="false">HOME</a>
+                            </li>
+                            <li class="nav-item submenu">
+                                <a class="nav-link submenu-toggle" href="#" role="button" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    ABOUT US<i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="submenu-menu">
+                                    <li><a class="submenu-item" href="./about-us.html">About Anam Tutors</a></li>
+                                    <li><a class="submenu-item" href="./how-select-tutor.html">How We Select Tutors</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./find-home-tutor.html">FIND A HOME TUTOR</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./find-online-tutor.html">FIND A ONLINE TUTOR</a>
+                            </li>
+                            <li class="nav-item submenu">
+                                <a class="nav-link submenu-toggle" href="#" role="button" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    SERVICES<i class="fa-solid fa-angle-down"></i>
+                                </a>
+                                <ul class="submenu-menu">
+                                    <li><a class="submenu-item" href="./Home Tutors.html">Home Tutors</a></li>
+                                    <li><a class="submenu-item" href="./Coaching-classes.html">Coaching Classes</a></li>
+                                    <li><a class="submenu-item" href="./online-tutors.html">Online Tutor</a></li>
+                                    <li><a class="submenu-item" href="./special-need-tutor.html">Special Need Tutor</a>
+                                    </li>
+                                    <li><a class="submenu-item" href="./career-counselling.html">Career Counselling</a>
+                                    </li>
+                                    <li><a class="submenu-item" href="./entrance exam.html">Entrance Exams</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Blog.html">BLOG</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./Contact-us.html">CONTACT US</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+
+
+
+    <section id="inner-slider">
+        <img src="images/inner-slide.jpg">
+        <div class="page-title-wrapper">
+            <h3 class="caption">Home Tutors</h3>
+            <div class="breadcrumb-container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                        <li class="breadcrumb-item">/</li>
+                        <li class="breadcrumb-item active" aria-current="page"> Home Tutors</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!--================Inner Text Area =================-->
+    <div id="content" class="mt50">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-8 col-lg-9">
+                    <h2 class="mb30">Home Tutors</h2>
+                    <p>
+                        At Anam Tutors, our home tuition service is delivered one-to-one, and tailored to accurately
+                        match the right tutor to each student based on their individual educational needs.
+                    </p>
+                    <p>
+                        Anam Tutors offers Home tutors who are available to live with a family during their holidays for
+                        periods of one or more weeks. Our tutors are subject specialists, all of whom are Enhanced DBS
+                        checked, fully vetted, and experienced at building trust and rapport with students regardless of
+                        their age, background or particular learning challenges.
+                    </p>
+                    <p>
+                        To find out more about our results focused approach to delivering one-to-one tuition in your own
+                        home, speak to our knowledgeable team on 8287177373
+                    </p>
+
+
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                    <h2>Our Services</h2>
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingOne">
+                                <h6 class="panel-title">
+                                    <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                                        aria-expanded="true" aria-controls="collapseOne">Home Tutors
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseOne" class="accordion-collapse collapse show" role="tabpanel"
+                                aria-labelledby="headingOne">
+                                <div class="panel-body">
+                                    <p>At Anam Tutors, our home tuition service is delivered one-to-one, and tailored to
+                                        accurately match the right tutor to each student...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingTwo">
+                                <h6 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">Coaching
+                                        Classes
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingTwo">
+                                <div class="panel-body">
+                                    <p>We provide expert coaching classes (home tuition as well as group coaching) for
+                                        all subjects to the students of class...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingThree">
+                                <h6 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Online
+                                        Tutor
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseThree" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingThree">
+                                <div class="panel-body">
+                                    <p>Anam Tutors offers an Online Tutors service delivered by highly experienced and
+                                        qualified tutors. Online Tutoring is when a tutor and student, who are...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFour">
+                                <h6 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">Special
+                                        Need Tutor
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseFour" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingFour">
+                                <div class="panel-body">
+                                    <p>Anam Tutors offers experienced tutors who specialize in teaching pupils with
+                                        dyslexia, ADHD, dyspraxia and other learning difficulties...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingFive">
+                                <h6 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">Career
+                                        Counselling
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseFive" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingFive">
+                                <div class="panel-body">
+                                    <p>It’s an integrated solution to provide instant, accessible, flexible, affordable,
+                                        and career counseling and planning for you. Anam Tutors provide you a best
+                                        career counselor for your child future. We deal in the following...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="headingSix">
+                                <h6 class="panel-title">
+                                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion"
+                                        href="#collapseSix" aria-expanded="false" aria-controls="collapseFive">Entrance
+                                        Exam
+                                    </a>
+                                </h6>
+                            </div>
+                            <div id="collapseSix" class="panel-collapse collapse" role="tabpanel"
+                                aria-labelledby="headingSix">
+                                <div class="panel-body">
+                                    <p>Entrance Exams such as IIT/JEE/NEET/CAT/GRE/GMAT/GATE etc are conducted by many
+                                        educational institutions to select students for admissions into a particular
+                                        stream, class or...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="testimonial">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Our Testimonials</h2>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6">
+                            <div class="tutor-testimonial">
+                                <h3>Tutor’s Testimonials</h3>
+                                <i class="fa fa-quote-left"></i>
+                                <div class="carousel slide" id="fade-quote-carousel" data-bs-ride="carousel"
+                                    data-bs-interval="5000">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/t1.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Teaching is my passion and working as a home tutor supplements my
+                                                    income as a school teacher. Awesome home tutoring service!</p>
+                                                <span>Trinath</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <div class="tutor-testimonial">
+                                <h3>Student’s/Parent’s Testimonials</h3>
+                                <i class="fa fa-quote-left"></i>
+                                <div class="carousel slide" id="Div1" data-bs-ride="carousel" data-bs-interval="5000">
+                                    <!-- Carousel items -->
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="profile-circle"
+                                                style="background-color: rgba(0,0,0,.2); background-image: url(images/p3.jpg)">
+                                            </div>
+                                            <div class="testi-text">
+                                                <p>Great website! We found a caring and humble home tutor for our
+                                                    daughter. She likes studying with the home tutor. Thanks to Anam
+                                                    Tutors</p>
+                                                <span>Gayathri’s Parents</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--================Testimonial Area =================-->
+
+    <div class="client-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="mt50">Our Clients</h2>
+
+                    <div class="owl-carousel owl-theme">
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/school.jpg"></div>
+                                <h6>SCHOOL</h6>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/institute.jpg">
+                                </div>
+                            </div>
+                            <h6>INSTITUTE</h6>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/college.jpg">
+                                </div>
+                            </div>
+                            <h6>COLLEGE</h6>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/corporate.jpg">
+                                </div>
+                            </div>
+                            <h6>CORPORATE</h6>
+                        </div>
+
+                        <div class="item">
+                            <div class="image-container">
+                                <div class=img-hover-box><img src="images/public-sector.jpg">
+                                </div>
+                            </div>
+                            <h6>PUBLIC SECTOR</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ===============Country Area============= -->
+    <div class="country-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7 col-md-8 col-lg-6">
+                    <h2 class="mb30">Countries We Provide Online Tuitions</h2>
+                    <p>Parents and students around the world who want extra help on a certain subject, but don’t want to
+                        leave the comfort of their own home, can to meet with teachers and tutors online via Anam
+                        Tutors.</p>
+                    <p>Online tutors are an affordable way to for families to give their children the very best
+                        education possible, no matter where in the world they are. We Provide Online Tuition to these
+                        countries....</p>
+                    <div class="country-flag">
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="images/australia-flag.jpg" alt="Australia" /><br>
+                                <span>Australia</span>
+                            </li>
+                            <li>
+                                <img src="images/singapore-flag.jpg" alt="Singapore" /><br>
+                                <span>Singapore</span>
+                            </li>
+                            <li>
+                                <img src="images/uk-flag.jpg" alt="UK" /><br>
+                                <span>UK</span>
+                            </li>
+                            <li>
+                                <img src="images/uae-flag.jpg" alt="UAE" /><br>
+                                <span>UAE</span>
+                            </li>
+                        </ul>
+                        <ul class="list-unstyled">
+                            <li>
+                                <img src="images/thailand-flag.jpg" alt="Thailand" /><br>
+                                <span>Thailand</span>
+                            </li>
+                            <li>
+                                <img src="images/malaysia-flag.jpg" alt="Malaysia" /><br>
+                                <span>Malaysia</span>
+                            </li>
+                            <li>
+                                <img src="images/saudi-arabia-flag.jpg" alt="Saudi Arabia" /><br>
+                                <span>Saudi Arabia</span>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-4 col-lg-6 hidden-xs">
+                    <img src="images/girl.png" alt="Anam Tutors" class="country-img" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ===============Country Area============= -->
+
+    <!-- ==================footer=========== -->
+
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="about">
+                            <img src="images/anam tutors logo.png" width="180" height="48" alt="Anam Tutors Logo">
+                            <p>Anam Tutors has been established for over 6 years and it has gained a high-class
+                                reputation with over 2,000 clients being successfully matched with tutors each year.
+                                Our objective is to run an efficient service in order to provide individual...</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Quick Links</h4>
+                        <ul style="list-style-type: square; color:#1a265c;">
+                            <li><a href="/about-us.html">About Anam Tutors</a></li>
+                            <li><a href="/how-select-tutor.html">How We Select Tutors</a></li>
+                            <li><a href="/find-home-tutor.html">Find A Home Tutor</a></li>
+                            <li><a href="/find-online-tutor.html">Find An Online Tutor</a></li>
+                            <li><a href="/Blog.html">Blog</a></li>
+                            <li><a href="/Contact-us.html">Contact Us</a></li>
+                            <li><a href="/study-material">Study Material</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Our Services</h4>
+                        <ul style="list-style-type: square; color:#1a265c;">
+                            <li><a href="/Home Tutors.html">Home Tutors</a></li>
+                            <li><a href="/Coaching-classes.html">Coaching Classes</a></li>
+                            <li><a href="/online-tutors.html">Online Tutor</a></li>
+                            <li><a href="/special-need-tutor.html">Special Need Tutor</a></li>
+                            <li><a href="/career-counselling.html">Career Counselling</a></li>
+                            <li><a href="/entrance exam.html">Entrance Exams</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <h4>Contact Us</h4>
+                        <ul class="list-unstyled contact">
+                            <li><i class="fa-solid fa-location-dot" style="color:#1a265c" aria-hidden="true"></i> G-14,
+                                First Floor,<br>Sector-3, Noida-201301<br>(Uttar Pradesh)</li>
+                            <li><i class="fa-solid fa-phone" style="color:#1a265c" aria-hidden="true"></i> +91
+                                7827761808</li>
+                            <li><i class="fa-solid fa-envelope" style="color:#1a265c" aria-hidden="true"></i><a
+                                    href="mailto:ceo@anamtutor.com"> ceo@anamtutors.com</a></li>
+                            <li><i class="fa-solid fa-globe" style="color:#1a265c" aria-hidden="true"></i><a href="#">
+                                    www.anamtutors.com</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer-btm">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="left">Copyright © 2024 Anam Tutors. <a href="#">Terms and Conditions</a> | <a
+                            href="#">Privacy</a></p>
+                </div>
+                <div class="col-md-6">
+                    <p class="right">Site Designed by <a href="http://infotiqq.com/">INFOTIQQ</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <a class="fixed-button hidden-xs" href="http://www.anamtutors.com/contact-us"></a>
+
+    <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="modal-title" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="modal-title">Login</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="bg-clr">
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-sm-12">
+                                    <label for="validationCustom01" class="form-label">*Email</label>
+                                    <input type="text" class="form-input" id="validationCustom01" required>
+                                </div>
+                                <div class="col-sm-12">
+                                    <label for="validationCustom02" class="form-label">*Password</label>
+                                    <input type="text" class="form-input" id="validationCustom02" required>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="sml-txt">
+                            <a href="#" data-bs-dismiss="modal" data-bs-toggle="modal"
+                                data-bs-target="#ForgotModal">Forgot Password?</a>
+                        </p>
+
+
+                        <div class="form-group">
+                            <button type="submit" class="btn ylw-btn2">Submit</button>
+                            <span id="lbl_msg"></span>&nbsp;
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
+
+</html>
